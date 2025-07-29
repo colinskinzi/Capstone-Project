@@ -35,10 +35,10 @@ As a Cloud Data Analyst, the key responsibilities and deliverables of the capsto
 
 ### 🔧 Tools & Technologies
 
-| Tool              | Purpose                               |
-|-------------------|---------------------------------------|
-| BigQuery          | Cloud-based data processing & storage |
-| Looker Enterprise | Data modeling, analysis & dashboards  |
+| Tool                  | Purpose                               |
+|-----------------------|---------------------------------------|
+| **BigQuery**          | Cloud-based data processing & storage |
+| **Looker Enterprise** | Data modeling, analysis & dashboards  |
 
 ### 📦 Deliverables
 
