@@ -16,7 +16,7 @@
 | 2   | l1tElcblED+YLpHP1HObw8z0m1gDmh0nkBbDTeSyqjs= | null      | n/a        | ANY            | 98000.0    | null             | Not Verified        | 117xx    | NY         | 2793         | 30724       |
 | 3   | 6AlfXSLHKvyLkb1t6CqwH3V+0HEPF2oDLfyV7sAQxjk= | null      | n/a        | ANY            | 173005.0   | null             | Not Verified        | 117xx    | NY         | 32031        | 512493      |
 
---an adiditional data set of US states ie Region and sub-regions this is useful to track loan data by state or region. 
+--an adiditional data set of US states i.e Region and sub-regions this is useful to track loan data by state or region. 
 --Sql code to improt the data 
 
 LOAD DATA OVERWRITE fintech.state_region
@@ -27,6 +27,8 @@ region string
 FROM FILES (
 format = 'CSV',
 uris = ['gs://sureskills-lab-dev/future-workforce/da-capstone/temp_35_us/state_region_mapping/state_region_*.csv']);
+
+--Result
 
 | Row | State | Subregion            | Region  |
 |-----|-------|----------------------|---------|
@@ -41,8 +43,9 @@ uris = ['gs://sureskills-lab-dev/future-workforce/da-capstone/temp_35_us/state_r
 | 9   | MO    | West North Central   | Midwest |
 | 10  | ND    | West North Central   | Midwest |
 
-
 -- this creates a **State_region data Table**
+
+
 --using the data from the tables I create a **Loan_with_region data set** by using a INNER JOIN the 2 table to creat a single report for **loan_id, loan_amount, and region**
 -- using CTAS
 
@@ -54,6 +57,8 @@ sr.region
 FROM fintech.loan lo
 INNER JOIN fintech.state_region sr
 ON lo.state = sr.state;
+
+--Result
 
 | Row | loan_id | loan_amount | Region  |
 |-----|---------|-------------|---------|
@@ -76,6 +81,7 @@ CREATE TABLE fintech.loan_purpose AS
 SELECT  DISTINCT(application.purpose)
 FROM fintech.loan;
 
+--Result
 
 | Row | Purpose            |
 |-----|--------------------|
@@ -89,6 +95,7 @@ FROM fintech.loan;
 | 8   | other              |
 | 9   | credit_card        |
 | 10  | debt_consolidation |
+
 
 --Answering the business questions with a report  **'Total amount in loans issued by year'** 
 CREATE TABLE fintech.loan_by_year AS
@@ -130,15 +137,6 @@ ORDER BY issue_year DESC;
 | 6   | 2014       | 23,453     |
 | 7   | 2013       | 13,460     |
 | 8   | 2012       | 2,594      |
-
-
-
-
-
-
-
-
-
 
 
 
