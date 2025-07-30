@@ -29,8 +29,9 @@ As a Cloud Data Analyst, the key responsibilities and deliverables of the capsto
 4. **📈 Insights Activation**  
    - Enable cross-filtering and drill-downs for stakeholder interaction
    - Share dashboards and generate automated reports that support real-time decision-making
-     ![Alt Text](path/to/TheLook_Lending_Insights.jpg)
-     ![Loan Dashboard](images/TheLook_Lending_Insights.jpg.png)
+
+     
+   ![Loan Dashboard](TheLook_Lending_Insights.jpg)
 
 
 5. **📝 Executive Summary**  
