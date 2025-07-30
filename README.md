@@ -31,7 +31,7 @@ As a Cloud Data Analyst, the key responsibilities and deliverables of the capsto
    - Share dashboards and generate automated reports that support real-time decision-making
 
      
-   ![Loan Dashboard](TheLook_Lending_Insights.jpg)
+   ![Loan Dashboard](images/TheLook_Lending_Insights.jpg)
 
 
 5. **📝 Executive Summary**  
