@@ -36,7 +36,7 @@ As a Cloud Data Analyst, the key responsibilities and deliverables of the capsto
 
 5. **📝 Executive Summary**  
    - Document the full process and findings in a professional executive summary, suitable for stakeholders and portfolio inclusion.
-
+ ![Loan Dashboard](images/report.jpg)
 ### 🔧 Tools & Technologies
 
 | Tool                  | Purpose                               |
