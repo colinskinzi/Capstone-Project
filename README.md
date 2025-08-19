@@ -53,6 +53,6 @@ See below:
 - Looker dashboard(s) for loan health and performance
 - A short executive summary capturing insights, outcomes, and impact
 - Documentation for end-user interaction and data refresh processes
-"""
+
 
 
